@@ -214,6 +214,12 @@ nav ul li.nav-divider{
   100% { opacity: 1; }
 }
 
+#landing p{
+	font-size: 26px;
+	color: #666;
+	padding-top: 10px;
+}
+
 #projects, #project, #about{
 	padding: 90px;
 }
@@ -293,10 +299,12 @@ ul.social li a:hover, #about p a:hover{
     color: #00e1bb;
 }
 
-
-
 ul.social li .text{
 	padding-left: 15px;
+}
+
+#project{
+	padding-bottom: 180px;
 }
 
 .project-about{
@@ -328,7 +336,15 @@ ul.social li .text{
 }
 
 footer{
-	height: 300px;
+	background-color: #00e1bb;
+}
+
+footer p{
+	width: 100%;
+	text-align: center;
+	padding: 300px 0 15px;
+	color: #07836e;
+	background-color: #00e1bb;
 }
 
 
