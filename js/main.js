@@ -15,16 +15,16 @@ $(function() {
 	});
 
 	// Slide Header on click
-	var headerSlide = false;
+	// var headerSlide = false;
 
-	$('#logo').click(function() {
-		if(headerSlide){
-			headerSlide = false;
-		}else{
-			headerSlide = true;
-		}
-		$('#header-slider').toggleClass('slide', headerSlide);
-	});
+	// $('#logo').click(function() {
+	// 	if(headerSlide){
+	// 		headerSlide = false;
+	// 	}else{
+	// 		headerSlide = true;
+	// 	}
+	// 	$('#header-slider').toggleClass('slide', headerSlide);
+	// });
 
 });
 
