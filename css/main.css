@@ -46,6 +46,7 @@ h3{
 
 a{
 	text-decoration: none;
+	outline: none;
 	color: #000;
 	opacity: 1;
 	transition: opacity 0.5s ease;
@@ -53,6 +54,10 @@ a{
 
 a:hover{
 	opacity: .5;
+}
+
+a img{
+	outline: none;
 }
 
 ul{
@@ -207,13 +212,13 @@ ul.thumbs li:hover{
 }
 
 .project-about{
-	width: 45%;
+	width: 40%;
 	float: left;
 	position: fixed;
 }
 
 .project-images{
-	width: 55%;
+	width: 60%;
 	float: right;
 }
 
