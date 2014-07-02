@@ -50,10 +50,12 @@ a{
 	color: #000;
 	opacity: 1;
 	transition: opacity 0.5s ease;
+	transition: color 0.5s ease;
 }
 
 a:hover{
 	opacity: .5;
+    color: #00e1bb;
 }
 
 a img{
@@ -94,6 +96,14 @@ p{
 .back-link a{
 	font-size: 12px;
 	color: #666;
+	opacity: 1;
+	transition: opacity 0.5s ease;
+	transition: color 0.5s ease;
+}
+
+.back-link a:hover{
+	opacity: .5;
+    color: #00e1bb;
 }
 
 .clear_fix{
@@ -142,13 +152,24 @@ header{
 
 nav{
 	float: right;
+	padding-right: 10px;
 }
 nav ul{
 	padding: 10px;
 }
 
 nav ul li{
-	padding-left: 10px;
+	padding-left: 18px;
+	line-height: 40px;
+}
+
+nav li{
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+nav ul li.nav-divider{
+	color: #00e1bb;
 }
 
 
@@ -197,8 +218,24 @@ nav ul li{
 	padding: 90px;
 }
 
+ul.thumbs{
+	max-width: 1050px;
+	margin: 0 auto;
+}
+
+ul.thumbs li{
+	opacity: 1;
+	transition: opacity 0.5s ease;
+}
+
+ul.thumbs li:hover{
+	opacity: .6;
+}
+
 #about{
 	background-color: #efefef;
+	padding-top: 120px;
+	height: 100%;
 }
 
 .about-images{
@@ -219,18 +256,47 @@ nav ul li{
 	padding-left: 30px;
 }
 
-ul.thumbs{
-	max-width: 1050px;
-	margin: 0 auto;
+#about h3{
+	font-size: 38px;
+	padding-bottom: 15px;
 }
 
-ul.thumbs li{
+#about h2{
+	font-size: 48px;
+	text-align: left;
+	padding-bottom: 10px;
+}
+
+#about p{
+	padding: 0 0 10px;
+	line-height: 30px;
+	font-size: 16px;
+	color: #666;
+}
+
+ul.social li{
+	float: none;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #666;
+}
+
+ul.social li a, #about p a{
+	color: #666;
 	opacity: 1;
 	transition: opacity 0.5s ease;
+	transition: color 0.5s ease;
 }
 
-ul.thumbs li:hover{
-	opacity: .6;
+ul.social li a:hover, #about p a:hover{
+	opacity: .5;
+    color: #00e1bb;
+}
+
+
+
+ul.social li .text{
+	padding-left: 15px;
 }
 
 .project-about{
@@ -259,6 +325,10 @@ ul.thumbs li:hover{
 
 .project-images img:last-child{
 	margin-bottom: 0;
+}
+
+footer{
+	height: 300px;
 }
 
 
