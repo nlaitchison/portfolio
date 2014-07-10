@@ -1,0 +1,369 @@
+/* ---------------------------------------------------------------------------------------------------
+
+-----Info
+
+-----Color Swatch
+
+-----Sections
+
+∆ General
+
+
+----------------------------------------------------------------------------------------------------*/
+
+
+/* ---------------------------------------------------------------------------------------------------
+		∆ General
+---------------------------------------------------------------------------------------------------*/
+
+
+html,body,div,form,fieldset,legend,label,h1,h2,h3,h4,h5,h6,p,ul,dl,dt,dd,figure,figcaption {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font: 14px Helvetica;
+	font-weight: lighter;
+}
+
+h2, h2 a{
+	font-weight: lighter;
+	text-transform: uppercase;
+	font-size: 34px;
+	letter-spacing: 2px;
+	text-align: center;
+	/*color: #555;*/
+	padding-bottom: 55px;
+}
+
+h3{
+	font-weight: lighter;
+	text-transform: uppercase;
+	font-size: 28px;
+	letter-spacing: 2px;
+}
+
+a{
+	text-decoration: none;
+	outline: none;
+	color: #000;
+	opacity: 1;
+	transition: opacity 0.5s ease;
+	transition: color 0.5s ease;
+}
+
+a:hover{
+	opacity: .5;
+    color: #00e1bb;
+}
+
+a img{
+	outline: none;
+}
+
+ul{
+	list-style-type: none;
+}
+
+li{
+	float: left;
+}
+
+p{
+	line-height: 22px;
+}
+
+.divider{
+	min-height: 1px;
+	max-height: 1px;
+	width: 100%;
+	background-color: #00e1bb;
+	margin: 15px 0;
+	opacity: .4;
+}
+
+.label{
+	font-weight: bold;
+	/*text-transform: uppercase;*/
+	padding-right: 4px;
+}
+
+.back-link{
+	margin-bottom: 35px;
+}
+
+.back-link a{
+	font-size: 12px;
+	color: #666;
+	opacity: 1;
+	transition: opacity 0.5s ease;
+	transition: color 0.5s ease;
+}
+
+.back-link a:hover{
+	opacity: .5;
+    color: #00e1bb;
+}
+
+.clear_fix{
+	clear: both;
+}
+
+.container{
+	max-width: 1333px;
+	margin: 0 auto;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------
+		∆ HEADER
+---------------------------------------------------------------------------------------------------*/
+
+header{
+	width: 100%;
+	height: 60px;
+	position: fixed;
+	z-index: 1;
+}
+
+#logo{
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 2;
+	cursor: pointer;
+}
+
+#header-slider{
+	width: 100%;
+	height: 60px;
+	background-color: #fff;
+	position: fixed;
+	/*left:-1380px;
+	transition: all 0.5s ease-in-out;
+	z-index: 1;*/
+}
+
+#header-slider.slide{
+	left:0px;
+	transition: all 0.5s ease-in-out ;
+}
+
+#header-slider img{
+	float: left;
+	margin-left: 58px;
+}
+
+nav{
+	float: right;
+	padding-right: 10px;
+}
+nav ul{
+	padding: 10px;
+}
+
+nav ul li{
+	padding-left: 18px;
+	line-height: 40px;
+}
+
+nav li{
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+nav ul li.nav-divider{
+	color: #00e1bb;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------
+		∆ HOME
+---------------------------------------------------------------------------------------------------*/
+
+#landing{
+	background-color: #efefef;
+	text-align: center;
+/*	background-image: url('../images/landing-bg.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;*/
+	height: 480px;
+	width: 100%;
+	padding-top: 280px;
+}
+
+.landing-img{
+	width: 100%;
+	-webkit-animation: logoAnimate 4s;
+  	-moz-animation:    logoAnimate 4s;
+ 	 -o-animation:      logoAnimate 4s;
+  	animation:         logoAnimate 4s;
+}
+
+@-webkit-keyframes logoAnimate {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes logoAnimate {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes logoAnimate {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes logoAnimate {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+#landing p{
+	font-size: 26px;
+	color: #666;
+	padding-top: 10px;
+}
+
+#projects, #project, #about{
+	padding: 90px;
+}
+
+ul.thumbs{
+	max-width: 1050px;
+	margin: 0 auto;
+}
+
+ul.thumbs li{
+	opacity: 1;
+	transition: opacity 0.5s ease;
+}
+
+ul.thumbs li:hover{
+	opacity: .6;
+}
+
+#about{
+	background-color: #efefef;
+	padding-top: 120px;
+	height: 100%;
+}
+
+.about-images{
+	float: left;
+	width: 48%;
+}
+
+.about-images img{
+	width: 100%;
+}
+
+.about-desc{
+	float: left;
+	width: 52%;
+}
+
+#about .content{
+	padding-left: 30px;
+}
+
+#about h3{
+	font-size: 38px;
+	padding-bottom: 15px;
+}
+
+#about h2{
+	font-size: 48px;
+	text-align: left;
+	padding-bottom: 10px;
+}
+
+#about p{
+	padding: 0 0 10px;
+	line-height: 30px;
+	font-size: 16px;
+	color: #666;
+}
+
+ul.social li{
+	float: none;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #666;
+}
+
+ul.social li a, #about p a{
+	color: #666;
+	opacity: 1;
+	transition: opacity 0.5s ease;
+	transition: color 0.5s ease;
+}
+
+ul.social li a:hover, #about p a:hover{
+	opacity: .5;
+    color: #00e1bb;
+}
+
+ul.social li .text{
+	padding-left: 15px;
+}
+
+#project{
+	padding-bottom: 180px;
+}
+
+.project-about{
+	width: 40%;
+	float: left;
+	position: fixed;
+}
+
+.project-images{
+	width: 60%;
+	float: right;
+}
+
+.content-left{
+	padding-right: 40px;
+}
+
+.content-right{
+	padding-left: 40px;
+	text-align: right;
+}
+
+.project-images img{
+	margin-bottom: 55px;
+}
+
+.project-images img:last-child{
+	margin-bottom: 0;
+}
+
+footer{
+	background-color: #00e1bb;
+}
+
+footer p{
+	width: 100%;
+	text-align: center;
+	padding: 300px 0 15px;
+	color: #07836e;
+	background-color: #00e1bb;
+}
+
+.project-footer p{
+	padding: 40px 0 15px;
+}
+
+
+@media (max-width:1230px) {
+	ul.thumbs{ max-width: 700px; }
+}
+
+@media (max-width:880px) {
+	ul.thumbs{ max-width: 350px; }
+	#projects, #project, #about{padding: 90px 40px;}
+}
+
+
