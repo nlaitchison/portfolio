@@ -13,18 +13,14 @@ App.config(function ($routeProvider) {
         templateUrl: 'views/landing.html',
         controller: 'MainCtrl'
       })
+      .when('/:page', {
+        templateUrl: 'views/landing.html',
+        controller: 'NavCtrl'
+      })
       .when('/projects/:name', {
         templateUrl: 'views/projectView.html',
         controller: 'ProjectViewCtrl'
       })
-      // .when('/projects/lanciv', {
-      //   templateUrl: 'views/lanciv.html',
-      //   controller: 'MainCtrl'
-      // })
-      // .when('/projects/bandmate', {
-      //   templateUrl: 'views/bandmate.html',
-      //   controller: 'MainCtrl'
-      // })
       .otherwise({
         redirectTo: '/'
       });

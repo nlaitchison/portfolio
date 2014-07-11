@@ -14,6 +14,8 @@
 				<p ng-if="project.client"><span class="label">Client:</span> {{project.client}}</p>
 				<div class="divider" ng-if="project.githubUrl"></div>
 				<p ng-if="project.githubUrl"><span class="label">Github:</span> <a ng-href="{{project.githubUrl}}" target="_blank">{{project.githubDisplay}}</a></p>
+				<div class="divider" ng-if="project.viewUrl"></div>
+				<p ng-if="project.viewUrl"><span class="label">View:</span> <a ng-href="{{project.viewUrl}}" target="_blank">{{project.viewDisplay}}</a></p>
 			</div>
 		</div>
 
