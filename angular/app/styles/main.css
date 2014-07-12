@@ -111,7 +111,7 @@ p{
 }
 
 .container{
-  max-width: 1333px;
+  max-width: 1800px;
   margin: 0 auto;
 }
 
@@ -335,6 +335,7 @@ ul.social li .text{
 .project-images{
   min-height: 480px;
 }
+
 .project-images div{
   margin-bottom: 55px;
 }
@@ -363,14 +364,27 @@ footer p{
   padding: 40px 0 15px;
 }
 
+@media (max-width:1350px) {
+  .project-images{ width: 55%; }
+}
 
 @media (max-width:1230px) {
   ul.thumbs{ max-width: 700px; }
+  .project-images div{ width: 100%; }
+  .project-images div img{ width: 100%; }
 }
 
 @media (max-width:880px) {
   ul.thumbs{ max-width: 350px; }
   #projects, #project, #about{padding: 90px 40px;}
+  .content-right{ padding-left: 0; }
 }
 
+@media (max-width:520px) {
+  .project-about { float: none; position: relative; width: 100%;}
+  .project-images { width: 100%; float: none; clear: both; margin-top: 35px;}
+  .project-images div{ margin-bottom: 25px;}
+  .content-left{ padding-right: 0; }
+  .content-right{ text-align: center; }
+}
 
