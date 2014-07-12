@@ -394,6 +394,9 @@ footer p{
   #landing {padding-top: 200px; height: 220px }
   ul.thumbs { width: 100%; }
   ul.thumbs li img { width: 100%; }
+  #about .about-images { float: none; width: 100%; }
+  #about .about-desc { float: none; width: 100%; padding-top: 20px; }
+  #about .content { padding: 0; }
 }
 
 @media (max-width:480px) {
@@ -405,5 +408,7 @@ footer p{
   nav ul { width: 300px; margin: 0 auto; padding: 5px 10px;}
   nav ul li{ font-size: 14px; padding-left: 8px;}
   #project { padding-top: 105px; }
+  #about .about-desc h3 { font-size: 32px; }
+  #about .about-desc h2 { font-size: 38px; }
 }
 
