@@ -381,6 +381,8 @@ footer p{
   ul.thumbs{ max-width: 350px; }
   #projects, #project, #about{padding: 90px 40px;}
   .content-right{ padding-left: 0; }
+  .landing-img img{ width: 94%; margin: 0 auto;}
+
 }
 
 @media (max-width:520px) {
@@ -389,7 +391,8 @@ footer p{
   .project-images div{ margin-bottom: 25px;}
   .content-left{ padding-right: 0; }
   .content-right{ text-align: center; }
-}
+  #landing {padding-top: 200px; height: 220px }
+  }
 
 @media (max-width:480px) {
   header { height: 85px; }
