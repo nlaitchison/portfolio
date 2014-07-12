@@ -392,7 +392,9 @@ footer p{
   .content-left{ padding-right: 0; }
   .content-right{ text-align: center; }
   #landing {padding-top: 200px; height: 220px }
-  }
+  ul.thumbs { width: 100%; }
+  ul.thumbs li img { width: 100%; }
+}
 
 @media (max-width:480px) {
   header { height: 85px; }
