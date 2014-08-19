@@ -19,7 +19,7 @@ App.controller('NavCtrl', function ($scope, $location, $routeParams, $anchorScro
 		$anchorScroll();
 		$location.hash('');
 	}else if($routeParams.page === 'contact'){
-		$location.hash('contact');
+		$location.hash('about');
 		$anchorScroll();
 		$location.hash('');
 	}

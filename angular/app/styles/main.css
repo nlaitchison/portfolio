@@ -17,6 +17,28 @@
 ---------------------------------------------------------------------------------------------------*/
 
 
+#logo-svg{
+  width: 220px;
+  height: 220px;
+  margin: 0 auto;
+}
+
+
+.path {
+  stroke-dasharray: 1000;
+  /*stroke-dashoffset: 1000;*/
+  animation: dash 3s linear; /*alternate infinite*/
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
 html,body,div,form,fieldset,legend,label,h1,h2,h3,h4,h5,h6,p,ul,dl,dt,dd,figure,figcaption {
   margin: 0;
   padding: 0;
@@ -188,10 +210,10 @@ nav ul li.nav-divider{
 #landing{
   background-color: #efefef;
   text-align: center;
-/*  background-image: url('../images/landing-bg.png');
+  background-image: url('../images/banner-bg-3.png');
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;*/
+  background-size: cover;
   height: 480px;
   width: 100%;
   padding-top: 280px;
