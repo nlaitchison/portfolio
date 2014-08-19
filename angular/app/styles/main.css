@@ -2,6 +2,8 @@
 
 -----Info
 
+  Written by: Nicole Aitchison
+
 -----Color Swatch
 
 -----Sections
@@ -28,6 +30,7 @@
   stroke-dasharray: 1000;
   /*stroke-dashoffset: 1000;*/
   animation: dash 3s linear; /*alternate infinite*/
+  /*animation: fillOpacity 2s ease 3s;*/
 }
 
 @keyframes dash {
@@ -37,6 +40,19 @@
   to {
     stroke-dashoffset: 0;
   }
+}
+
+.fill{
+  margin-top: -120px;
+}
+.fillLogo {
+  animation: fillOpacity 5s;
+}
+
+@keyframes fillOpacity {
+  0%   { fill: transparent; }
+  60%   { fill: transparent; }
+  100% { fill: #fff; }
 }
 
 html,body,div,form,fieldset,legend,label,h1,h2,h3,h4,h5,h6,p,ul,dl,dt,dd,figure,figcaption {
@@ -216,31 +232,35 @@ nav ul li.nav-divider{
   background-size: cover;
   height: 480px;
   width: 100%;
-  padding-top: 280px;
+  padding: 240px 0 60px;
 }
 
 .landing-img{
   width: 100%;
-  -webkit-animation: logoAnimate 4s;
-    -moz-animation:    logoAnimate 4s;
-   -o-animation:      logoAnimate 4s;
-    animation:         logoAnimate 4s;
+  -webkit-animation: logoAnimate 5s;
+    -moz-animation:    logoAnimate 5s;
+   -o-animation:      logoAnimate 5s;
+    animation:         logoAnimate 5s;
 }
 
 @-webkit-keyframes logoAnimate {
   0%   { opacity: 0; }
+  60%   { opacity: 0; }
   100% { opacity: 1; }
 }
 @-moz-keyframes logoAnimate {
   0%   { opacity: 0; }
+  60%   { opacity: 0; }
   100% { opacity: 1; }
 }
 @-o-keyframes logoAnimate {
   0%   { opacity: 0; }
+  60%   { opacity: 0; }
   100% { opacity: 1; }
 }
 @keyframes logoAnimate {
   0%   { opacity: 0; }
+  60%   { opacity: 0; }
   100% { opacity: 1; }
 }
 
