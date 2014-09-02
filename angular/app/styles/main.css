@@ -19,42 +19,6 @@
 ---------------------------------------------------------------------------------------------------*/
 
 
-#logo-svg{
-  width: 220px;
-  height: 220px;
-  margin: 0 auto;
-}
-
-
-.path {
-  stroke-dasharray: 1000;
-  /*stroke-dashoffset: 1000;*/
-  animation: dash 3s linear; /*alternate infinite*/
-  /*animation: fillOpacity 2s ease 3s;*/
-}
-
-@keyframes dash {
-  from {
-    stroke-dashoffset: 1000;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-.fill{
-  margin-top: -120px;
-}
-.fillLogo {
-  animation: fillOpacity 5s;
-}
-
-@keyframes fillOpacity {
-  0%   { fill: transparent; }
-  60%   { fill: transparent; }
-  100% { fill: #fff; }
-}
-
 html,body,div,form,fieldset,legend,label,h1,h2,h3,h4,h5,h6,p,ul,dl,dt,dd,figure,figcaption {
   margin: 0;
   padding: 0;
@@ -264,6 +228,71 @@ nav ul li.nav-divider{
   100% { opacity: 1; }
 }
 
+#logo-svg{
+  width: 220px;
+  height: 220px;
+  margin: 0 auto;
+}
+
+.path {
+  stroke-dasharray: 1000;
+  /*stroke-dashoffset: 1000;*/
+    -webkit-animation: dash 3s linear;
+    -moz-animation:    dash 3s linear;
+   -o-animation:      dash 3s linear;
+    animation:         dash 3s linear;
+  /*animation: fillOpacity 2s ease 3s;*/
+}
+
+@-webkit-keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-moz-keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-o-keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.fill{
+  margin-top: -120px;
+}
+.fillLogo {
+  animation: fillOpacity 5s;
+}
+
+@keyframes fillOpacity {
+  0%   { fill: transparent; }
+  60%   { fill: transparent; }
+  100% { fill: #fff; }
+}
+
 #landing p{
   font-size: 26px;
   color: #666;
@@ -427,18 +456,22 @@ footer p{
 
 }
 
+@media (max-width:650px){
+  #about .about-images { float: none; width: 100%; }
+  #about .about-desc { float: none; width: 100%; padding-top: 20px; }
+  #about .content { padding: 0; }
+}
+
 @media (max-width:520px) {
   .project-about { float: none; position: relative; width: 100%;}
   .project-images { width: 100%; float: none; clear: both; margin-top: 35px;}
   .project-images div{ margin-bottom: 25px;}
   .content-left{ padding-right: 0; }
   .content-right{ text-align: center; }
-  #landing {padding-top: 200px; height: 220px }
+  #landing {padding: 150px 0 100px; height: 220px }
   ul.thumbs { width: 100%; }
   ul.thumbs li img { width: 100%; }
-  #about .about-images { float: none; width: 100%; }
-  #about .about-desc { float: none; width: 100%; padding-top: 20px; }
-  #about .content { padding: 0; }
+  .landing-img img{ width: 60%; margin: 0 auto;}
 }
 
 @media (max-width:480px) {
@@ -452,5 +485,6 @@ footer p{
   #project { padding-top: 105px; }
   #about .about-desc h3 { font-size: 32px; }
   #about .about-desc h2 { font-size: 38px; }
+  .landing-img img{ width: 80%; margin: 0 auto;}
 }
 
