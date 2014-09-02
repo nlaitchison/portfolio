@@ -21,6 +21,10 @@ App.config(function ($routeProvider) {
         templateUrl: 'views/projectView.html',
         controller: 'ProjectViewCtrl'
       })
+      .when('/:name', {
+        templateUrl: 'views/projectView.html',
+        controller: 'ProjectViewCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
