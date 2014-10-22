@@ -1,0 +1,540 @@
+/* ---------------------------------------------------------------------------------------------------
+
+-----Info
+
+No Anchor
+Web Developer:  Nicole Aitchison
+
+-----Color Swatch
+
+Header Black: #000000
+Header Grey: #161616
+Nav Text White: #fcfcfc
+Nav Text Hover Gold: #bea322
+
+
+-----Sections
+
+∆ General
+∆ Header
+∆ Header Icons
+∆ Main Content
+∆ Banner
+∆ Footer
+∆ Fixes
+∆ Fonts
+
+----------------------------------------------------------------------------------------------------*/
+
+
+/* ---------------------------------------------------------------------------------------------------
+		∆ General
+---------------------------------------------------------------------------------------------------*/
+
+
+html,body,div,form,fieldset,legend,label,h1,h2,h3,h4,h5,h6,p,ul,dl,dt,dd,figure,figcaption {
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+section{
+	padding: 10px 20px 10px 20px;
+}
+
+.container {
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+	padding: 0;
+	overflow: hidden;
+}
+
+/* ---------------------------------------------------------------------------------------------------
+		∆ Header
+---------------------------------------------------------------------------------------------------*/
+
+header, header a, nav a{
+	color: #fcfcfc;
+}
+
+#header_top{
+	background-color: #000;
+	height: 46px;
+	width: 100%;
+}
+
+#header_bottom{
+	background-color: #161616;
+	height: 34px;
+	width: 100%;
+}
+
+#header_texture{
+	margin: -42px auto 0 auto;
+	height: 14px;
+	width: 100%;
+	background: url(../images/na_header.png) no-repeat top center;
+}
+
+#header_nav{
+	margin-top: -52px;
+}
+
+#logo img{
+	float: left;
+}
+
+#logo_text{
+	float: left;
+	padding: 53px 0 0 10px;
+	font: 21px 'Raleway', sans-serif;
+	word-spacing: 4px;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+nav ul{
+	float: left;
+	margin-left: 230px;
+	list-style-type: none;
+	margin-top: 55px;
+}
+
+nav li{
+	float: left;
+	font: 15px 'Raleway', sans-serif;
+	margin-right: 25px;
+}
+
+header a:hover, nav a:hover{
+	color: #bea322;
+}
+
+a.active{
+	color:#bea322;
+}
+
+/* ---------------------------------------------------------------------------------------------------
+		∆ Header Icons
+---------------------------------------------------------------------------------------------------*/
+
+
+nav ul#icons {
+	width: 156px;
+	float: right;
+	margin-left: 0;
+	margin-top: 52px;
+	padding-right: 5px;
+}
+
+nav ul#icons li{
+	width: 26px;
+	height: 25px;
+	margin: 0;
+	float: left;
+}
+
+nav ul#icons a{
+	background: url(../images/na_icons.png) no-repeat;
+	display: block;
+	height: 25px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+ul#icons li a#facebook:hover{
+	background-position: 0 -25px;
+}
+
+ul#icons li a#youtube {
+	background-position: -26px 0px;
+}
+
+ul#icons li a#youtube:hover {
+	background-position: -26px -25px;
+}
+
+ul#icons li a#tumblr {
+	background-position: -52px 0px;
+}
+
+ul#icons li a#tumblr:hover {
+	background-position: -52px -25px;
+}
+
+ul#icons li a#twitter {
+	background-position: -78px 0px;
+}
+
+ul#icons li a#twitter:hover {
+	background-position: -78px -25px;
+}
+
+ul#icons li a#vimeo {
+	background-position: -104px 0px;
+}
+
+ul#icons li a#vimeo:hover {
+	background-position: -104px -25px;
+}
+
+ul#icons li a#insta {
+	background-position: -130px 0px;
+}
+
+ul#icons li a#insta:hover {
+	background-position: -130px -25px;
+}
+
+.inactive_link{
+	color:#4d4d4d;
+}
+
+
+
+/* ---------------------------------------------------------------------------------------------------
+		∆ Main Content
+---------------------------------------------------------------------------------------------------*/
+
+#main_content{
+	background-color: #f1f1f1;
+	padding: 0;
+}
+
+section#kickstart{
+	height: 275px;
+	width: 840px;
+	margin: 0 auto;
+	padding: 25px 0;
+}
+
+#kickstart_title{
+	font: 22px 'Raleway', sans-serif;
+	font-weight: 900;
+	word-spacing: 4px;
+	text-transform: uppercase;
+	text-align: center;
+	float: left;
+	background: url(../images/na_paperrip_1.png) no-repeat;
+	width: 255px;
+	height: 75px;
+	padding: 15px 125px 32px 34px;
+	margin-left: 10px;
+}
+
+#kickstart_text{
+	font: 18px 'Raleway', sans-serif;
+	word-spacing: 4px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	float: left;
+	background: url(../images/na_paperrip_2.png) no-repeat;
+	width: 350px;
+	height: 100px;
+	padding: 26px 30px 30px 40px;
+	margin-left: 5px;
+}
+
+#video{
+	float: left;
+	padding-right: 10px;
+}
+
+section#instagram{
+	font: 40px 'Raleway', sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 25px 0 10px 0;
+}
+
+p#instagram_info{
+	float: left;
+	-webkit-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+	padding: 40px 0 90px 40px;
+	width: 420px;
+	height: 100px;
+}
+
+#who_we_are{
+	width: 840px;
+	margin: 0 auto;
+	padding: 25px 0;
+}
+
+#who_we_are p{
+	background: url(../images/na_who_we_are_bg.png) no-repeat;
+	width: 760px;
+	height: 295px;
+	padding: 67px 40px 40px;
+	margin-top: 10px;
+	font: 22px 'Raleway', sans-serif;
+	word-spacing: 5px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------
+		∆ Banner
+---------------------------------------------------------------------------------------------------*/
+
+section#banner{
+	margin: auto 0;
+	width: 100%;
+	padding: 25px 0;
+}
+
+.graphic, #prevBtn, #nextBtn, #slider1prev, #slider1next{
+    margin: 0;
+    padding: 0;
+    display: block;
+    overflow: hidden;
+    text-indent: -8000px;
+}
+
+/* Easy Slider */
+#slider{
+	width: 840px; /* added when slider fucntionality is removed */
+	margin: 0 auto;
+}
+#slider img{
+	width: 840px;
+}
+
+#slider ul, #slider li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#slider li{
+	/*
+		define width and height of list item (slide)
+		entire slider area will adjust according to the parameters provided here
+	*/
+	width: 840px;
+	height: 436px;
+	overflow: hidden;
+}
+
+#prevBtn, #nextBtn,
+#slider1next, #slider1prev{
+	display: block;
+	width: 19px;
+	height: 24px;
+	position: absolute;
+	left: 20px;
+	top: 218px;
+	z-index: 1000;
+}
+
+#nextBtn, #slider1next{
+	left: 920px;
+}
+
+#prevBtn a, #nextBtn a,
+#slider1next a, #slider1prev a{
+	display: block;
+	position: relative;
+	width: 30px;
+	height: 77px;
+	background: url(../images/na_left_arrow.png) no-repeat 0 0;
+}
+
+#prevBtn a:hover, #nextBtn a:hover,
+#slider1next a:hover, #slider1prev a:hover{
+	background: url(../images/na_left_arrow_hover.png) no-repeat 0 0;
+}
+
+#nextBtn a, #slider1next a{
+	background: url(../images/na_right_arrow.png) no-repeat 0 0;
+}
+
+#nextBtn a:hover, #slider1next a:hover{
+	background: url(../images/na_right_arrow_hover.png) no-repeat 0 0;
+}
+
+/* ---------------------------------------------------------------------------------------------------
+		∆ Media Page
+---------------------------------------------------------------------------------------------------*/
+
+.media{
+	margin: 25px;
+	font: 13px/20px 'Helvetica Neue', sans-serif;
+	overflow: hidden;
+}
+
+.media h2{
+	color: #000;
+	font: 23px 'Raleway', sans-serif;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+.media_video{
+	float: left;
+}
+
+.media a.adjust, .media a{
+	padding-top: 10px;
+	color: #bea322;
+}
+
+.media a.adjust:hover, .media a:hover{
+	color: #000;
+}
+
+/*.media .more-less, .media .share_links*/ .media .media_info{
+	width: 480px;
+	margin-left: 30px;
+	float: left;
+}
+
+.share_links ul{
+	margin-top:10px;
+	list-style-type: none;
+}
+
+.share_links li{
+	float: left;
+	margin-right: 5px;
+}
+
+.pagination{
+	width: 100%;
+	text-align: center;
+	font: 15px/20px 'Helvetica Neue', sans-serif;
+}
+
+.pagination.top{
+	padding-top: 20px;
+}
+
+.pagination.bottom{
+	padding-bottom: 20px;
+}
+
+.pagination a{
+	color: #000;
+}
+
+.pagination a:hover, .pagination a.current{
+	color: #bea322;
+}
+
+/* ---------------------------------------------------------------------------------------------------
+		∆ Footer
+---------------------------------------------------------------------------------------------------*/
+
+
+footer{
+	width: 100%;
+	padding: 40px 0 70px;
+	background-color: #161616;
+	font: 19px 'Raleway', sans-serif;
+	font-weight: 900;
+	text-transform: uppercase;
+	overflow: hidden;
+}
+
+h2{
+	color: #bea322;
+	padding-bottom: 8px;
+}
+
+#contact_form{
+	padding: 45px 0 0 65px;
+	float: left;
+}
+
+.input_text input, .input_text textarea{
+	font: 14px 'Helvetica Neue', sans-serif;
+	background: #2f2f2f;
+	border: none;
+	padding: 8px;
+	color: #f1f1f1;
+	/*float: left;*/
+	width: 300px;
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
+
+.input_text textarea{
+	max-width: 300px;
+	min-width: 300px;
+
+}
+
+.input_text input[type=submit]{
+	width: 100px;
+	background-color: #3b1140;
+
+}
+
+footer img{
+	float: right;
+	padding-right: 60px;
+}
+
+.spacer{
+	height: 35px;
+}
+
+.input_text input#input_subscribe_email{
+	width: 190px;
+}
+
+/* ---------------------------------------------------------------------------------------------------
+		∆ Fixes
+---------------------------------------------------------------------------------------------------*/
+
+a img { border: 0; }
+
+img { max-width: 100%; }
+
+.clear_fix { clear: both; }
+
+
+/* ---------------------------------------------------------------------------------------------------
+		∆ Fonts
+---------------------------------------------------------------------------------------------------*/
+
+
+/* @license
+ * MyFonts Webfont Build ID 2642683, 2013-09-13T00:59:23-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: Festivo Letters No.1 by Ahmet Altun
+ * URL: http://www.myfonts.com/fonts/ahmet-altun/festivo-letters/no-1/
+ * Copyright: Copyright (c) 2013 by Ahmet Altun. All rights reserved.
+ * Licensed pageviews: 500,000
+ *
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2642683
+ *
+ * © 2013 MyFonts Inc
+*/
+
+/*@import url("//hello.myfonts.net/count/2852fb");
+@font-face {font-family: 'FestivoLettersNo1';src: url('../fonts/festivoOne/2852FB_0_0.eot');src: url('../fonts/festivoOne/2852FB_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/festivoOne/2852FB_0_0.woff') format('woff'),url('../fonts/festivoOne/2852FB_0_0.ttf') format('truetype');}
+
+@import url("//hello.myfonts.net/count/2855ff");
+@font-face {font-family: 'FestivoLettersNo18';src: url('../fonts/festivoEighteen/2855FF_0_0.eot');src: url('../fonts/festivoEighteen/2855FF_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/festivoEighteen/2855FF_0_0.woff') format('woff'),url('../fonts/festivoEighteen/2855FF_0_0.ttf') format('truetype');}
+
+@import url("//hello.myfonts.net/count/285752");
+@font-face {font-family: 'FestivoLettersNo1';src: url('../fonts/festivoSeven/285752_0_0.eot');src: url('../fonts/festivoSeven/285752_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/festivoSeven/285752_0_0.woff') format('woff'),url('../fonts/festivoSeven/285752_0_0.ttf') format('truetype');}
+*/
+

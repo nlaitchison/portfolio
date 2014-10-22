@@ -1,0 +1,257 @@
+/* ---------------------------------------------------------------------------------------------------
+
+-----Info
+
+-----Color Swatch
+
+-----Sections
+
+∆ GENERAL
+∆ GRID
+
+
+----------------------------------------------------------------------------------------------------*/
+
+
+/* ---------------------------------------------------------------------------------------------------
+		∆ GENERAL
+---------------------------------------------------------------------------------------------------*/
+
+
+html,body,div,form,fieldset,legend,label,h1,h2,h3,h4,h5,h6,p,ul,dl,dt,dd,figure,figcaption {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font: 16px Avenir, Helvetica, sans-serif;
+}
+
+h2{
+  color: #181818;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+section{
+  padding: 110px 0;
+}
+
+ul{
+	list-style-type: none;
+}
+
+li{
+	float: left;
+}
+
+.white{
+  color: #fff;
+}
+
+.grey{
+  color: #181818;
+}
+
+.blue{
+  color: #00e1bb;
+}
+
+.clear-fix{
+	clear: both;
+}
+
+/* HEADER ---------------------------------------------------*/
+
+header{
+  width: 100vw;
+  position: fixed;
+  z-index:2;
+}
+
+nav{
+  float: right;
+  padding: 20px;
+}
+
+nav li{
+  padding-left: 8px;
+}
+
+nav li a{
+  text-decoration: none;
+  color: #ddd;
+  font-size: 14px;
+}
+
+nav li.divider{
+  color: #00e1bb;
+}
+
+/* LANDING ---------------------------------------------------*/
+
+section#landing{
+  background: url(../images/bg.jpg) top center no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+}
+
+#arrow{
+  width: 35px;
+  height: 20px;
+  margin: 0 auto;
+  padding-top: 250px;
+  opacity: .4;
+  animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  -o-animation-delay: 3s;
+  ms-animation-delay: 3s;
+}
+
+#logo-svg{
+  height: 200px;
+  width: 220px;
+  margin: 0 auto;
+  padding-top: 30vh;
+}
+
+.path {
+  stroke-dasharray: 1000;
+  /*stroke-dashoffset: 1000;*/
+    -webkit-animation: dash 3s linear;
+    -moz-animation:    dash 3s linear;
+   -o-animation:      dash 3s linear;
+    animation:         dash 3s linear;
+  /*animation: fillOpacity 2s ease 3s;*/
+}
+
+@-webkit-keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-moz-keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-o-keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* WORK ---------------------------------------------------*/
+
+section#work{
+  background: #fff;
+}
+
+.item{
+
+}
+
+/* BANNER ---------------------------------------------------*/
+
+#banner{
+  background: url(../images/brand-new.jpg) top center no-repeat;
+  background-size: cover;
+  height: 25vw;
+}
+
+/* ---------------------------------------------------------------------------------------------------
+    ∆ GRID
+---------------------------------------------------------------------------------------------------*/
+
+.main-container{
+  /*margin-top: 70px;*/
+}
+
+.sub-container{
+  margin-top: 10px;
+}
+
+.container{
+  width: 85%; /* 73.68% 1050px*/
+  max-width: 1324px;
+  min-width: 300px;
+  margin: 0 auto;
+  clear: both;
+}
+
+.columns{
+  float: left;
+  box-sizing: border-box;
+  padding: 0 1%;
+  /*margin: 5px 0;*/
+}
+
+.left{
+  box-sizing: border-box;
+  padding-right: 15px;
+}
+
+.right{
+  box-sizing: border-box;
+  padding-left: 15px;
+}
+
+/* 12 column grid */
+.one    { width: 8.33%; }
+.two    { width: 16.66%; }
+.three  { width: 25%; }     /* quarter */
+.four   { width: 33.32%; }  /* third */
+.five   { width: 41.65%; }
+.six    { width: 50%; }     /* half */
+.seven  { width: 58.31%; }
+.eight  { width: 66.64%; }
+.nine   { width: 75%; }     /* two thirds */
+.ten    { width: 83.3%; }
+.eleven { width: 91.63%; }
+.twelve { width: 100%; }
+
+
+@media only screen and (max-width: 959px){
+
+
+}
+
+@media only screen and (max-width: 767px) {
+
+
+}
+
+@media only screen and (max-width: 480px) {
+
+  .columns { float: none; padding: 0; }
+  .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve { width: 100%; }
+
+}
+
+
