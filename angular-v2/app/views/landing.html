@@ -3,7 +3,7 @@
 	<section id="landing">
 		<div class="container">
 
-			<div id="logo-svg">
+			<div id="logo-svg" class="animated fadeIn">
 				<svg height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
 					<path class="path" d="M 41.326 173.952 L 74.279 135.517 L 82.859 147.943 L 41.362 195.919 L 21.607 195.919 L 21.607 13.309 L 41.326 13.309 L 167.24 195.919 L 149.681 195.919 L 41.326 38.962 L 41.326 173.952 L 74.279 135.517" fill="transparent" stroke="white" stroke-width="3"/>
 
@@ -12,9 +12,13 @@
 
 			</div>
 
-			<div class="landing-img">
-				<img src="images/name-white.png">
+			<div id="arrow" class="animated fadeInDown">
+				<img src="images/arrow.png">
 			</div>
+
+			<!-- <div class="landing-img">
+				<img src="images/name-white.png">
+			</div> -->
 		</div> <!-- end container -->
 	</section> <!-- end landing -->
 
@@ -22,43 +26,65 @@
 		<div class="container">
 			<h2> PROJECTS </h2>
 			<ul class="thumbs">
-				<li><a ng-href="#/projects/lanciv" href="#/projects/lanciv"><img src="images/lanciv-thumb.png"></a></li>
-				<li><a ng-href="#/projects/bandmate" href="#/projects/bandmate"><img src="images/bandmate-thumb.png"></a></li>
-				<li><a ng-href="#/projects/fatwreck" href="#/projects/fatwreck"><img src="images/fat-thumb.png"></a></li>
-				<li><a ng-href="#/projects/loven" href="#/projects/loven"><img src="images/loven-thumb.png"></a></li>
-				<li><a ng-href="#/projects/noanchor" href="#/projects/noanchor"><img src="images/noanchor-thumb.png"></a></li>
-				<li><a ng-href="#/projects/akero" href="#/projects/akero"><img src="images/akero-thumb.png"></a></li>
+				<li><a ng-href="#/projects/lanciv" href="#/projects/lanciv"><img src="images/lanciv-thumb.png"></a><p>Branding / Print Design </p></li>
+				<li><a ng-href="#/projects/bandmate" href="#/projects/bandmate"><img src="images/bandmate-thumb.png"></a><p>Branding / Web Design & Development</p></li>
+				<li><a ng-href="#/projects/fatwreck" href="#/projects/fatwreck"><img src="images/fat-thumb.png"></a><p>Web Design &amp; Development</p></li>
+				<li><a ng-href="#/projects/loven" href="#/projects/loven"><img src="images/loven-thumb.png"></a><p>Branding / Web Design &amp; Development</p></li>
+				<li><a ng-href="#/projects/noanchor" href="#/projects/noanchor"><img src="images/noanchor-thumb.png"></a><p>Web Development</P</li>
+				<li><a ng-href="#/projects/akero" href="#/projects/akero"><img src="images/akero-thumb.png"></a><p>Branding / Shirt Design</p></li>
 				<div class="clear_fix"></div>
 			</ul>
 		</div> <!-- end container -->
 	</section> <!-- end projects -->
 
+	<section id="banner">
+	</section>
+
 	<section id="about">
 		<div class="container">
-			<div class="about-images">
+			<!-- <div class="about-images">
 				<img src="images/aboutme.png">
-			</div>
+			</div> -->
 			<div class="about-desc">
-				<div class="content">
-					<h3> My Name&#39;s </h3>
-					<h2> Nicole Aitchison.</h2>
+				<div class="me-pic"><img src="images/me-3.png"></div>
+					<h3> My Name's Nicole Aitchison.</h3>
 					<!-- <div class="divider"></div> -->
-					<p>(That&#39;s me on the right.) </p>
-					<p>I&#39;m a 20 year old web designer and front-end developer with a passion for minimal design and beautifying the web. I want to use my skills as a designer/developer to contribute to the music industry and promote creativity in others. </p>
-					<p> <a href="images/Nicole_Aitchison-Resume.pdf" target="_blank">&#187; View My Resume</a></p>
-					<ul class="social">
+					<p>I&#39;m a 20 year old web designer and front-end developer with a passion for minimal design and beautifying the web. Music is my second passion and my reason for pursuing design. I'd love to use my skills to contribute to the music industry and hopefully inspire others to create and pursue their dreams.</p>
+					<p> <span class="blue">&#187;</span><a href="images/Nicole_Aitchison-Resume.pdf" target="_blank"> Check Out My Resume</a></p>
+					<!-- <ul class="social">
 						<li><span class="icon"><img src="images/phone-icon.png" align="middle"></span><span class="text">936.446.7392</span></li>
 						<li><span class="icon"><img src="images/email-icon.png" align="middle"></span><span class="text">nlaitchison@gmail.com</span></li>
 						<li><span class="icon"><img src="images/github-icon.png" align="middle"></span><span class="text"><a href="https://github.com/nlaitchison">github.com/nlaitchison</a></span></li>
-					</ul>
+					</ul> -->
 				</div>
-			</div>
 			<div class="clear_fix"></div>
 		</div> <!-- end container -->
-	</section> <!-- end projects -->
+	</section> <!-- end about -->
+
 
 </div> <!-- end home -->
 
+<section id="contact">
+	<div class="container">
+		<h2> Contact Me </h2>
+		<ul class="social-icons">
+			<li><img src="images/dribbble.png"></li>
+			<li><img src="images/twitter.png"></li>
+			<li><img src="images/github-icon.png" align="middle"></li>
+			<li><img src="images/linked-in.png"></li>
+			<div class="clear_fix"></div>
+		</ul>
+		<ul class="social">
+			<div class="phone"><li class="icon"><img src="images/phone-icon.png" align="middle"></li><li class="text">936.446.7392</li></div>
+			<div class="email"><li class="icon"><img src="images/email-icon.png" align="middle"></li><li class="text">nlaitchison@gmail.com</span></li></div>
+			<div class="clear_fix"></div>
+		</ul>
+	</div> <!-- end container -->
+</section>
+
 <footer>
-	<p>&copy; 2014 Nicole Aitchison</p>
+	<div class="footer-content">
+
+		<p>&copy; 2014 Nicole Aitchison</p>
+	</div>
 </footer>
