@@ -1,0 +1,35 @@
+<div class="container">
+	<section id="project">
+		<div class="project-about">
+			<div class="content-left">
+				<div class="back-link"><a ng-href="#/projects"> &#171; Back to Projects </a></div>
+				<h3>{{project.name}}</h3>
+				<div class="divider"></div>
+				<p>{{project.description}}</p>
+				<div class="divider"></div>
+				<p><span class="label">Category:</span> {{project.category}}</p>
+				<div class="divider" ng-if="project.technology"></div>
+				<p ng-if="project.technology"><span class="label">Technologies:</span> {{project.technology}}</p>
+				<div class="divider" ng-if="project.client"></div>
+				<p ng-if="project.client"><span class="label">Client:</span> {{project.client}}</p>
+				<div class="divider" ng-if="project.githubUrl"></div>
+				<p ng-if="project.githubUrl"><span class="label">Github:</span> <a ng-href="{{project.githubUrl}}" target="_blank">{{project.githubDisplay}}</a></p>
+				<div class="divider" ng-if="project.viewUrl"></div>
+				<p ng-if="project.viewUrl"><span class="label">View:</span> <a ng-href="{{project.viewUrl}}" target="_blank">{{project.viewDisplay}}</a></p>
+			</div>
+		</div>
+
+		<div class="project-images">
+			<div class="content-right">
+				<div ng-repeat="img in project.images">
+					<img ng-src="{{img}}">
+				</div>
+			</div>
+		</div>
+		<div class="clear_fix"></div><!-- end project-->
+	</section>
+</div>
+
+<footer class="project-footer">
+	<p>&copy; 2014 Nicole Aitchison</p>
+</footer>
