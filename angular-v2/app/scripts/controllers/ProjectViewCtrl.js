@@ -70,6 +70,14 @@ App.controller('ProjectViewCtrl', function ($scope, $location, $routeParams) {
 		'images' : ['images/akero/logo-large.png']
 	};
 
+	var dhp = {
+		'name' : 'Downhole Plus',
+		'description' : "I was asked to create branding for an oilfield company called Downhole Plus, DHP. The logo contains a hidden 'H' and oil drops in the 'd' and 'p'. The client decided to go with a different name though, so these designs where not used.",
+		'category' : 'Branding / Print Design',
+		'client' : 'Wenzel Downhole Tools LLC',
+		'images' : ['images/dhp/logo-large-2.png', 'images/dhp/buisnesscard.png', 'images/dhp/shirt.png']
+	};
+
 	if($routeParams.name === 'lanciv')
 		$scope.project = lanciv;
 	else if($routeParams.name === 'bandmate')
@@ -82,6 +90,8 @@ App.controller('ProjectViewCtrl', function ($scope, $location, $routeParams) {
 		$scope.project = noanchor;
 	else if($routeParams.name === 'akero')
 		$scope.project = akero;
+	else if($routeParams.name === 'dhp')
+		$scope.project = dhp;
 
 });
 

@@ -462,11 +462,11 @@ ul.thumbs li:hover{
 }
 
 footer{
-  background-color: #07836e;
+  background-color: #2f2f2f;
   padding: 100px;
   text-align: center;
 /*  border-top: 2px solid #099c83;*/
-  color: #00e1bb;
+  color: #666;
 }
 
 footer p{
@@ -501,7 +501,7 @@ footer p{
 
 @media (max-width:880px) {
   ul.thumbs{ max-width: 350px; }
-  #projects, #project, #about, footer{padding: 90px 40px;}
+  #projects, #project, #about, #contact{padding: 90px 40px;}
   .content-right{ padding-left: 0; }
   /*.landing-img img{ width: 94%; margin: 0 auto;}*/
 }
