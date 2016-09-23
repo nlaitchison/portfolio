@@ -1,0 +1,155 @@
+/* ---------------------------------------------------------------------------------------------------
+
+-----Info
+∆ Nicole Aitchison
+∆ github.com/nlaitchison
+
+
+----------------------------------------------------------------------------------------------------*/
+
+
+/* GENERAL ---------------------------------------------------*/
+
+
+html,body,div,form,fieldset,legend,label,h1,h2,h3,h4,h5,h6,p,ul,dl,dt,dd,figure,figcaption,header,nav,section,ul,li {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font: 16px Avenir, Helvetica, sans-serif;
+}
+
+header{
+	position: absolute;
+	padding: 12px;
+	width: 100%;
+	z-index: 200;
+}
+
+nav{
+	color: white;
+	font-size: 28px;
+    text-align: right;
+    font-size: 25px;
+}
+
+nav, a, a:active, a:hover, a:visited{
+	color: #e2e2e2;
+}
+
+ul{
+	list-style-type: none;
+	width: auto;
+	display: inline-block;
+}
+
+li{
+	display: inline-block;
+	padding: 0 4px;
+}
+
+a{
+	width: 100%;
+}
+
+i{
+	cursor: pointer;
+}
+
+/* LANDING ---------------------------------------------------*/
+
+section#landing{
+  background: url(../images/bg.jpg) top center no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+}
+
+#arrow{
+  width: 35px;
+  height: 20px;
+  margin: 0 auto;
+  padding-top: 250px;
+  opacity: .4;
+  animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  -o-animation-delay: 3s;
+  ms-animation-delay: 3s;
+}
+
+#logo-svg{
+  height: 220px;
+  width: 100%;
+  padding-top: 30vh;
+  text-align: center;
+}
+
+svg{
+	display: inline-block;
+}
+
+.path {
+  stroke-dasharray: 1000;
+  /*stroke-dashoffset: 1000;*/
+    -webkit-animation: dash 3s linear;
+    -moz-animation:    dash 3s linear;
+   -o-animation:      dash 3s linear;
+    animation:         dash 3s linear;
+  /*animation: fillOpacity 2s ease 3s;*/
+}
+
+@-webkit-keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-moz-keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-o-keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#banner{
+  background: url(../images/brand-new.jpg) top center no-repeat;
+  background-size: cover;
+  height: 25vw;
+}
+
+/* QUERIES ---------------------------------------------------*/
+
+@media only screen and (max-width: 667px) {
+
+  nav{ text-align: center; }
+
+}
+
+
